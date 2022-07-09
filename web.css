@@ -176,3 +176,38 @@ h3{
         flex-direction: column;
     }
 }
+
+.Kontakt{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.osipane{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: absolute;
+    overflow: hidden;
+}
+.osipane img{
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left:0;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: green;
+}
