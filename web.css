@@ -28,6 +28,7 @@ nav img{
     flex: 1;
     text-align: right;
 }
+
 .nav-linky ul li{
     list-style: none;
     display: inline-block;
@@ -40,6 +41,7 @@ nav img{
     text-decoration: none;
     font-size: 20px;
 }
+
 
 .nav-linky ul li::after{
     content: '';
@@ -127,10 +129,18 @@ nav .fa{
 }
 
 .stroje{
-    width: 80%;
+    min-height: 100vh;
+    width: 100%;
+    background-color:honeydew;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 70vh;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+}
+.stroje .nav-linky ul li a{
+    color: black;
 }
 
 h1{
@@ -138,37 +148,65 @@ h1{
     font-weight: 600;
 }
 p{
-    color: back;
+    color: grey;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+    margin-bottom: 5%;
 }
 
 .row{
-    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
     display:flex;
     justify-content: space-between;
+    color: #fff;
+    padding-bottom: 20%;
+}
+.row h3 {
+    text-align:center;
+}
+.row p {
+    color: white;
 }
 
 .poda{
-    flex-basis: 41%;
-    background:rgb(123, 189, 123);
-    border: black;
-    border-width: 2px;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
+    margin-left: 50px;
+    margin-bottom: 2%;
+    padding: 70px 32px;
     box-sizing: border-box;
+    border-radius: 10px;
+    text-align: left;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/pole1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.osipane{
+    margin-right: 50px;
+    margin-bottom: 2%;
+    padding: 70px 32px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: left;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/osipane.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 h3{
-    text-align: center;
+    text-align: left;
     font-weight: 600;
 }
 
 .poda:hover{
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.7);
+}
+.osipane:hover{
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.7);
 }
 
 @media(max-width: 700px){
@@ -176,38 +214,59 @@ h3{
         flex-direction: column;
     }
 }
+.colorbox {
+    background-color: black; 
+    background-size: cover;
+}
+
+.Adresa{
+    min-height: 100vh;
+    width: 100%;
+    background-color:honeydew;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Adresa .nav-linky ul li a{
+    color: black;
+}
+
+.adresa2 h2{
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+iframe{
+    height: 350px;
+    width: 700px;
+    margin-bottom: 40px;
+}
 
 .Kontakt{
-    width: 80%;
+    flex-basis: 30%;
+    min-height: 100vh;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/kontakty.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-.osipane{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: absolute;
-    overflow: hidden;
-}
-.osipane img{
-    width: 30%;
-    height: 100%;
-    top: 0;
-    left:0;
+.Majitelia{
+    padding-left: 14vh;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 30%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-
-.layer:hover{
-    background: green;
+.Majitelia img{
+    text-align:center;
+    width: 70%;
+    height: 70%;
 }
