@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Cekomi s.r.o</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class='header'>
+        <nav>
+            <a href="web.html"><img src="images/logo1.png" alt="" class="logo"></a>
+            <div class="nav-linky" id="navlinky">
+                <i class="fa fa-times" onclick="openmenu()"></i>
+                <ul>
+                    <li><a href="">Domov</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="closemenu()"></i>
+        </nav>
+        <div class ="ramcek">
+            <h1>Polnohospodarstvo Michalany</h1>
+            <p>Praca na poli, zber repky, psenice, soji a jacmenu. Taktiez
+            ponukame <br> osipane za dobru cenu a kvalitu.
+            </p>
+            <a href="" class="kontakt">Kontaktujte nas pre viac info</a>
+        </div>
+    </section>
+
+    <section class="stroje">
+        <h1>Vyuzivane technologie</h1>
+        <p>V nasej firme vyuzivame najnovsie stroje ci uz je to na cistenie<br>
+            pody alebo krmenie a udrziavanie nasich osipanych <br>pre najlepsiu kvalitu masa.
+        </p>
+        <div class="row">
+            <div class="poda">
+                <h3>Poda</h3>
+                <p>Na zber pody pouzivame kombajn znacky Class a traktory znacky John Deer. <br>
+                Po zbere pody je vazena na vahe urcenej pre tazke naklady. Nasledovne je poda <br>
+                 prenesena do cisticky kde sa pretriedi a potom uz len caka na vase vyzdvihnutie.</p>
+            </div>
+            <div class="poda">
+            <h3>Osipane</h3>
+            <p>O osipane je kazdy den postarane. Nas zamestnanec pride rano aj vecer 
+                a skontroluje <br> ci funguje automaticke krmenie. Raz za den sa kontroluje bazen a v pripade potreby sa 
+                <br> precisti aby sa sa v zariadeni osipanych udrziaval poriadok a cistota.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navlinky = document.getElementById("navlinky");
+        function openmenu(){
+            navlinky.style.right = "0px";
+        }
+        function closemenu(){
+            navlinky.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
